@@ -13,10 +13,10 @@ test.each([
   ['Kr5555ug', false],
   ['Kr259kr', true],
   ['Mn_-LP', true],
-  ['Mn___P', false],
+  ['Mn___P', true],
   ['15men', false],
   ['map12Ron', true],
-  ['Mn---P', false],
+  ['Mn---P', true],
   ['DFg#@gpo', false],
 ])(('Проверка метода validateUsername'), (obj, exp) => {
   expect(Validator.validateUsername(obj)).toBe(exp);
